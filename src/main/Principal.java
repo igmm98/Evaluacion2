@@ -31,12 +31,22 @@ public class Principal {
 		{
 			if(listado[i] instanceof Electrodomestico)
 			{
+				System.out.println("------------------------");
 				electrodomestico = (Electrodomestico) listado[i];
 				try
 				{
-					if(listado[i] instanceof Lavadora) {System.out.println("Lavadora");}
-					else if(listado[i] instanceof Television) {System.out.println("Television");}
-					else {System.out.println("General");}
+					if(listado[i] instanceof Lavadora) 
+					{
+						System.out.println("Lavadora");
+					}
+					else if(listado[i] instanceof Television) 
+					{
+						System.out.println("Television");
+					}
+					else 
+					{
+						System.out.println("General");
+					}
 					
 				}catch(Exception e) {}
 				electrodomestico.ToString();
