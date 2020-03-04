@@ -216,11 +216,17 @@ public class Television extends Electrodomestico {
 	
 	public void ToString()
 	{
+		String sintonizador = "";
+		if(this.sintonizadorTDT==true) {
+			sintonizador = "Si";
+		}else {
+			sintonizador = "No";
+		}
 		System.out.println("Color: "+this.color+
 						   "\nConsumo energetico: "+this.consumoEnergetico+
 						   "\nPeso: "+this.peso+
 						   "\nResolucion (Pulgadas): "+this.resolucion+
-						   "\nSintonizador TDT: "+this.sintonizadorTDT);
+						   "\nSintonizador TDT: "+sintonizador);
 	}
 
 }
