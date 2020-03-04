@@ -44,7 +44,7 @@ public class Principal {
 				if(listado[i] instanceof Television)sumaTelevision += electrodomestico.PrecioFinal();
 			}catch(Exception e) {}
 		}
-		System.out.println("-----------------------------------------------");
+		System.out.println("-------------------------------------------------");
 		System.out.println("La suma de valores de lavadoras es: "+sumaLavadora);
 		System.out.println("La suma de valores de televisores es: "+sumaTelevision);
 		System.out.println("La suma total de electrodomesticos es: "+total);

@@ -10,7 +10,7 @@ public class Television extends Electrodomestico {
 	
 	private double peso; // En Kg.
 	
-	private int resolucion;
+	private int resolucion; // En pulgadas
 	
 	private boolean sintonizadorTDT; // TDT
 	
@@ -55,7 +55,7 @@ public class Television extends Electrodomestico {
 	 * @param resolucion
 	 * @Setter
 	 */
-	public final void SetResolucion(int resolucion)
+	public void SetResolucion(int resolucion)
 	{
 		this.resolucion = resolucion;
 	}
@@ -63,7 +63,7 @@ public class Television extends Electrodomestico {
 	 * @param sintonizadorTDT
 	 * @Setter
 	 */
-	public final void SetSintonizadorTDT(boolean sintonizadorTDT)
+	public void SetSintonizadorTDT(boolean sintonizadorTDT)
 	{
 		this.sintonizadorTDT = sintonizadorTDT;
 	}
@@ -128,14 +128,14 @@ public class Television extends Electrodomestico {
 	/**
 	 * @return resolucion
 	 */
-	public final int GetResolucion()
+	public int GetResolucion()
 	{
 		return this.resolucion;
 	}
 	/**
 	 * @return sintonizadorTDT
 	 */
-	public final boolean GetSintonizadorTDT()
+	public boolean GetSintonizadorTDT()
 	{
 		return this.sintonizadorTDT;
 	}
