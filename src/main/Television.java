@@ -213,5 +213,14 @@ public class Television extends Electrodomestico {
 		}
 		return this.precioBase;
 	}
+	
+	public void ToString()
+	{
+		System.out.println("Color: "+this.color+
+						   "\nConsumo energetico: "+this.consumoEnergetico+
+						   "\nPeso: "+this.peso+
+						   "\nResolucion (Pulgadas): "+this.resolucion+
+						   "\nSintonizador TDT: "+this.sintonizadorTDT);
+	}
 
 }

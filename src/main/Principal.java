@@ -32,7 +32,15 @@ public class Principal {
 			if(listado[i] instanceof Electrodomestico)
 			{
 				electrodomestico = (Electrodomestico) listado[i];
-				System.out.println("Precio $"+electrodomestico.PrecioFinal());
+				try
+				{
+					if(listado[i] instanceof Lavadora) {System.out.println("Lavadora");}
+					else if(listado[i] instanceof Television) {System.out.println("Television");}
+					else {System.out.println("General");}
+					
+				}catch(Exception e) {}
+				electrodomestico.ToString();
+				System.out.println("Precio final $"+electrodomestico.PrecioFinal()+"\n");
 				total += electrodomestico.PrecioFinal();
 			}
 			try

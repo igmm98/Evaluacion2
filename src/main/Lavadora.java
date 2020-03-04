@@ -190,5 +190,13 @@ public class Lavadora extends Electrodomestico {
 		}
 		return this.precioBase;
 	}
+	
+	public void ToString()
+	{
+		System.out.println("Color: "+this.color+
+						   "\nConsumo energetico: "+this.consumoEnergetico+
+						   "\nPeso: "+this.peso+
+						   "\nCarga: "+this.carga);
+	}
 
 }
